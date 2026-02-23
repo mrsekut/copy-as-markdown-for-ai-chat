@@ -1,5 +1,6 @@
 import type { PlasmoCSConfig } from 'plasmo';
 
+import { getAdapter } from '../adapters';
 import { htmlToMarkdown } from '../core/html-to-markdown';
 import { showToast } from '../lib/toast';
 
@@ -10,14 +11,15 @@ export const config: PlasmoCSConfig = {
 document.addEventListener('keydown', e => {
   if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'c') {
     const selection = window.getSelection();
-    if (!selection || !selection.rangeCount || selection.isCollapsed) return;
+    if (!selection) return;
+
+    const adapter = getAdapter(location.href);
+    if (!adapter) return;
+
+    const container = adapter.getSelectionContainer(selection);
+    if (!container) return;
 
     e.preventDefault();
-    const range = selection.getRangeAt(0);
-    const fragment = range.cloneContents();
-    const container = document.createElement('div');
-    container.appendChild(fragment);
-
     const md = htmlToMarkdown(container);
     navigator.clipboard
       .writeText(md)
