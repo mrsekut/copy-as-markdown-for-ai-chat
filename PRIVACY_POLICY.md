@@ -1,39 +1,52 @@
-# Privacy Policy — Copy as Markdown for AI Chat
+# Privacy Policy for Copy as Markdown for AI Chat
 
-**Last updated:** 2025-02-24
+**Last updated:** 2026-02-24
 
 ## Overview
 
-"Copy as Markdown for AI Chat" is a Chrome extension that converts selected AI chat content to Markdown format and copies it to your clipboard. This extension is designed with privacy in mind and operates entirely locally on your device.
+"Copy as Markdown for AI Chat" (hereinafter "the Extension") is a Chrome browser extension that converts selected AI chat content to Markdown format and copies it to the user's clipboard. The Extension operates entirely locally within the user's browser.
 
 ## Data Collection
 
-This extension does **not** collect, store, transmit, or share any personal data or user information. Specifically:
+This Extension does **not** collect any personal data or user information. Specifically:
 
-- No analytics or tracking of any kind
-- No network requests are made by the extension
-- No data is sent to any external server
-- No cookies or local storage are used
+- No personally identifiable information is collected
+- No browsing history is collected or tracked
+- No analytics or telemetry data is collected
+- No cookies or local storage are used to store user data
 - No user accounts or sign-ins are required
+- No network requests are made by the Extension
+
+## Data Usage
+
+Since this Extension does not collect any user data, no user data is used for any purpose. The Extension's sole function is to convert selected HTML content on the current page to Markdown format and copy the result to the user's clipboard. This conversion happens entirely within the user's browser and no data leaves the user's device.
+
+## Data Storage
+
+This Extension does not store any user data. No data is saved to local storage, cookies, or any other persistent storage mechanism. The converted Markdown text is only placed in the user's system clipboard as part of the copy operation and is not retained by the Extension.
+
+## Data Sharing
+
+This Extension does not share any data with third parties. No data is transmitted to external servers, third-party services, or any other entities. The Extension makes no network requests of any kind.
 
 ## Permissions
 
-This extension requires the following browser permission:
+This Extension requires the following browser permissions:
 
-- **clipboardWrite**: Used solely to copy the converted Markdown text to your clipboard when you trigger the copy action.
+- **clipboardWrite**: Used solely to write the converted Markdown text to the user's clipboard when the user triggers the copy action via keyboard shortcut.
 
 ## Content Scripts
 
-The extension runs a content script on `chatgpt.com` to detect your text selection and convert it to Markdown. This processing happens entirely within your browser. No content from the page is sent anywhere.
+The Extension injects a content script on `chatgpt.com` to detect the user's text selection and convert it to Markdown format. This processing happens entirely within the user's browser. No page content is collected, stored, or transmitted.
 
 ## Third-Party Services
 
-This extension does not use any third-party services, APIs, or SDKs.
+This Extension does not use any third-party services, APIs, SDKs, or libraries that collect user data.
 
-## Changes to This Policy
+## Changes to This Privacy Policy
 
-If this privacy policy is updated, the changes will be posted to this page with a revised "Last updated" date.
+We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date.
 
 ## Contact
 
-If you have any questions about this privacy policy, please open an issue on the [GitHub repository](https://github.com/mrsekut/copy-as-markdown-for-ai-chat).
+If you have any questions about this Privacy Policy, please open an issue on the [GitHub repository](https://github.com/mrsekut/copy-as-markdown-for-ai-chat).
